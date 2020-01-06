@@ -4,7 +4,7 @@ from pages.login_page import LoginPage
 LINK_LOGIN_PAGE = "https://mail.ru/"
 
 
-@pytest.mark.login
+@pytest.mark.mail
 def test_authorize_for_rop(browser):
     login_page = LoginPage(browser, LINK_LOGIN_PAGE)
     login_page.open_page()
